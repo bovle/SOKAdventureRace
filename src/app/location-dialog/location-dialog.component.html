@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Edit item</h1>
+<div mat-dialog-content>
+<mat-form-field>
+    <mat-label>edit item location</mat-label>
+    <mat-select [(ngModel)]="selection">
+      <mat-option *ngFor="let location of data" [value]="location.id">
+        {{location.name}}
+      </mat-option>
+    </mat-select>
+</mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="selection" cdkFocusInitial>Ok</button>
+  </div>

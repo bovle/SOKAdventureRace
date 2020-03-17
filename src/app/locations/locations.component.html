@@ -1,0 +1,16 @@
+<mat-form-field>
+    <mat-label>new location name</mat-label>
+    <input matInput #locationName>
+</mat-form-field>
+<button mat-icon-button aria-label="add location" (click)="onClickAddLocation(locationName.value)">
+    <mat-icon>add</mat-icon>
+</button>
+<mat-list role="list" class="mat-elevation-z8">
+    <mat-list-item *ngFor="let location of locations">{{location.name}}
+        <button mat-icon-button aria-label="delete location" (click)="onClickDeleteLocation(location)">
+            <mat-icon>delete</mat-icon>
+        </button>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+    
+</mat-list>

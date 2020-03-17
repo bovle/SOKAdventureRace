@@ -1,0 +1,15 @@
+app-item-list {
+    width: 100%;
+    height: 95%;
+    margin: 1em;
+}
+
+app-locations {
+    width: 100%;
+    height: 95%;
+    margin: 1em;
+}
+
+mat-grid-tile{
+    overflow: auto;
+}
