@@ -1,7 +1,7 @@
 <h1 mat-dialog-title>Edit item</h1>
 <div mat-dialog-content>
 <mat-form-field>
-    <mat-label>edit item location</mat-label>
+    <mat-label>vælg lokation</mat-label>
     <mat-select [(ngModel)]="selection">
       <mat-option *ngFor="let location of data" [value]="location.id">
         {{location.name}}

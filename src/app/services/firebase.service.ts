@@ -15,6 +15,10 @@ export class FirebaseService {
     return this.db.collection<Item>('items').valueChanges({idField: 'id'});
   }
 
+  getItem(itemId: string){
+    return this.db.doc<Item>('items/' + itemId).valueChanges();
+  }
+
   createItem(item: Item){
     return this.db.collection<Item>('items').add({
       name: item.name,

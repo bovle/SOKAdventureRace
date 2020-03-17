@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
-import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
 import { MatTableModule } from '@angular/material/table';
 import { MatListModule } from '@angular/material/list';
@@ -56,7 +56,7 @@ import { MobileComponent } from './mobile/mobile.component';
     MatSelectModule,
     MatDialogModule,
     FormsModule,
-    BarecodeScannerLivestreamModule
+    ZXingScannerModule
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]
